@@ -1,0 +1,9 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.png'); /* Arka plan resmi */
+    background-size: cover; /* Arka plan resminin ekran boyutuna tam olarak sığması */
+    background-position: center; /* Arka plan resminin ortalanması */
+    background-attachment: fixed; /* Arka plan resminin ekranla birlikte kaydırılmaması */
+    color: #333; /* Yazı rengi */
