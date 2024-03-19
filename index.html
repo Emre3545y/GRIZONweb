@@ -31,6 +31,9 @@
             text-align: center;
         }
         .profile-img {
+            position: fixed;
+            top: 10px;
+            right: 10px;
             width: 150px;
             height: 150px;
             border-radius: 50%;
@@ -38,6 +41,9 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
         .side-img {
+            position: fixed;
+            top: 10px;
+            left: 10px;
             width: 150px;
             height: 150px;
             border-radius: 50%;
@@ -77,18 +83,19 @@
         }
         .background-img {
             position: fixed;
-            bottom: 0;
+            top: 0;
             left: 0;
             width: 100%;
+            height: 200%;
+            background-image: url('arka_plan.png');
+            background-size: cover; /* Resmi ekran boyutuna sığacak şekilde ölçeklendir */
+            background-repeat: no-repeat; /* Resmi yineleme */
             z-index: -1;
         }
         /* Responsive Tasarım */
         @media screen and (max-width: 768px) {
             .profile-img, .side-img {
                 display: none;
-            }
-            .modal-content {
-                width: 90%;
             }
         }
     </style>
@@ -102,8 +109,8 @@
         <a href="#" onclick="showAbout()">Hakkımızda</a>
     </nav>
     <section>
-        <h2>Anasayfa</h2>
-        <p>Burası web sitenizin modern bir görünüm kazandırılmış ana sayfasıdır.</p>
+        <h2></h2>
+        <p>.</p>
     </section>
     <img src="profil_foto.jpg" alt="Profil Fotoğrafı" class="profile-img">
     <img src="sol_foto.png" alt="Sol Fotoğraf" class="side-img">
@@ -120,8 +127,7 @@
         </div>
     </div>
 
-    <!-- Arka plan resmi -->
-    <img src="arka_plan.png" alt="Arka Plan Resmi" class="background-img">
+    <div class="background-img"></div>
 
     <script>
         function showAbout() {
