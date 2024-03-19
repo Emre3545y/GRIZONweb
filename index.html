@@ -88,6 +88,12 @@
             width: 100%;
             z-index: -1;
         }
+        /* Responsive Tasarım */
+        @media screen and (max-width: 768px) {
+            .profile-img, .side-img {
+                display: none;
+            }
+        }
     </style>
 </head>
 <body>
@@ -99,11 +105,11 @@
         <a href="#" onclick="showAbout()">Hakkımızda</a>
     </nav>
     <section>
-        <h2></h2>
-        <p></p>
+        <h2>Anasayfa</h2>
+        <p>Burası web sitenizin modern bir görünüm kazandırılmış ana sayfasıdır.</p>
     </section>
     <img src="profil_foto.jpg" alt="Profil Fotoğrafı" class="profile-img">
-    <img src="sol_foto.png" alt="Sol Fotoğraf" class="side-img">
+    <img src="sol_foto.jpg" alt="Sol Fotoğraf" class="side-img">
 
     <!-- Hakkımızda modalı -->
     <div id="aboutModal" class="modal">
@@ -118,7 +124,7 @@
     </div>
 
     <!-- Arka plan resmi -->
-    <img src="arka_plan.png" alt="Arka Plan Resmi" class="background-img">
+    <img src="arka_plan.jpg" alt="Arka Plan Resmi" class="background-img">
 
     <script>
         function showAbout() {
